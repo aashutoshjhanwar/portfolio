@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+body{
+    overflow-x: hidden;
+    width: 100vw;
+   
+   
+}
+.light {
+    margin-top: 0.1cm;
+    margin-left: 0.1cm;
+    width: 99%;
+  height: 100vh;
+  
+   
+  
+  --borderWidth: 3px;
+  background:black;
+  position: absolute;
+  border-radius: var(--borderWidth);
+
+  
+  }
+.light:after
+{
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 4);
+    width: calc(100% + var(--borderWidth) * 4);
+    background: linear-gradient(60deg, #0000ff,#0000ff,#33DCFF ,#33CCFF ,#33A1FF,#df0c0c,#33A1FF,#0000ff,#df0c0c );
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: tadap 3s linear infinite;
+    
+    filter: blur(5px);
+}
+@keyframes tadap{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.alag {
+margin-left: 16cm;
+  color: #000000;
+  font-family: "East Sea Dokdo", cursive;
+  padding-top: 0.5cm;
+  font-size: 600%;
+  letter-spacing: 10px;
+  
+
+  -webkit-box-reflect:below 1px linear-gradient(transparent,#0004) ;
+  outline: none;
+  animation: cham 5s linear infinite;
+}
+
+@keyframes lights
+{
+    0%,100%{
+        color:rgb(70, 0, 128);
+        filter: blur(2px);
+        text-shadow: 0 0 10px#ff0000 ,
+                    0 0 20px #ff0000,
+                    0 0 40px #ff0000,
+                    0 0 80px#ff0000 ,
+                    0 0 120px #ff0000,
+                    0 0 200px #ff0000,
+                    0 0 300px #ff0000,
+                    0 0 300px #ff0000;
+    }
+    5%,95%{
+        color:white;
+        filter: blur();
+        text-shadow: 0 0 10px none
+    }
+}
+#bijli
+{ 
+     
+     color: black;
+     position: relative;
+
+}
+.raining {
+    height: 100vh;
+    background-image: url(https://pngimg.com/uploads/rain/rain_PNG13468.png);
+    animation: rain 0.15s linear infinite;
+  }
+  .raining:before {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: white;
+  
+    opacity: 0;
+    -webkit-animation: lightining ease-out 4s infinite;
+    -moz-animation: lightining ease-out 4s infinite;
+    animation: lightining ease-out 4s infinite;
+    animation-delay: 3s;
+  }
+  @keyframes raining {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 20% 100%;
+    }
+  }
+  @keyframes lightining {
+    from {
+      opacity: 0;
+    }
+    92% {
+      opacity: 0;
+    }
+    93% {
+      opacity: 0.6;
+    }
+    94% {
+      opacity: 0.2;
+    }
+    96% {
+      opacity: 0.9;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes lightining {
+    from {
+      opacity: 0;
+    }
+    92% {
+      opacity: 0;
+    }
+    93% {
+      opacity: 0.6;
+    }
+    94% {
+      opacity: 0.2;
+    }
+    96% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .cloud
+  {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100vh;
+      background: url(Cloud.png);
+      animation: clouds 60s linear infinite;
+      opacity: 0.7;
+      
+  }
+  @keyframes clouds
+  {
+      0%{
+          background-position: 0px;
+      }
+      100%
+      {
+          background-position: -5440px;
+      }
+  }
+  .swing {
+    animation: swing ease-in-out 2.5s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0cm;
+    filter: grayscale();
+    left: 1cm;
+   
+}
+.swing img {
+    border: 10px solid #000000;
+    display: block;
+   
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+    
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg); }
+}
+  
+.swings {
+    animation: swing ease-in-out 2.5s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0cm;
+    filter: grayscale();
+    left: 33cm;
+}
+.swings img {
+    border: 10px solid #000000;
+    display: block;
+    width:"200px"; height:"280px";
+}
+.swings:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swings:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+    
+}
+ 
+@keyframes swings {
+    0% { transform: rotate(15deg); }
+    100% { transform: rotate(-15deg); }
+}
+.rotation {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: animate 80s linear infinite;
+    margin-left: 17cm;
+    top: 9cm;
+   
+    
+  }
+  @keyframes animate {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  .rotation span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004) ;
+  }
+  .rotation span img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .don1{
+  --i:1
+  }
+  .don2{
+    --i:2
+  }
+  .don3{
+    --i:3
+  }
+  .don4{
+    --i:4
+  }
+  .don5{
+    --i:5
+  }
+  .don6{
+    --i:6
+  }
+  .don7{
+    --i:7
+  }
+  .don8{
+    --i:8
+  }
+  .me  {
+    position: absolute;
+    top: 14.5cm; 
+    margin-left: 13.8cm;
+    transform: translate(45%,-90%, 90%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 5em;
+    font-weight: 200;
+    color: YELLOW;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+   
+    
+}
+  @media(max-width:480px)  {
+
+
+
+    .alag {
+      margin-left: 1.6cm;
+      position: absolute;
+        color: #000000;
+        font-family: "East Sea Dokdo", cursive;
+        margin-top: 0.2cm;
+        font-size: 260%;
+      -webkit-box-reflect:below 1px linear-gradient(transparent,#0004) ;
+        outline: none;
+        animation: cham 5s linear infinite;
+      }
+
+      .swing {
+        animation: swing ease-in-out 2.5s infinite alternate;
+        transform-origin: center -20px;
+        float:left;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        position: absolute;
+        top: 0cm;
+        filter: grayscale();
+        left: 1.3cm;
+        top: 4cm;
+        display: none;
+     
+    }
+    .swing img {
+      border: 10px solid #000000;
+      display: block;
+    display: none;
+     }
+     .swings {
+      animation: swing ease-in-out 2.5s infinite alternate;
+      transform-origin: center -20px;
+      float:left;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0cm;
+      filter: grayscale();
+      left: 33cm;
+      display: none;
+  }
+  .swings img {
+      border: 10px solid #000000;
+      display: block;
+      width:"200px"; height:"280px";
+      display: none;
+  }
+  .rotation {
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animate 80s linear infinite;
+    margin-left: 0.5cm;
+    top: 9cm;
+   
+   
+    
+  }
+  .rotation span {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004) ;
+    display: none;
+  }
+  .rotation span img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .me {
+    display: none;
+  }
+  .don1{
+    height: 100px;
+  }
+  }

@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.parent {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(https://13thhour.com/wp-content/uploads/haunted_hous1.jpg);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.overlap {
+  position: absolute;
+  color: white;
+  top: 2cm;
+  left: 1cm;
+  transform: rotate(-5deg);
+}
+.rain {
+  height: 100vh;
+  background-image: url(https://pngimg.com/uploads/rain/rain_PNG13468.png);
+  animation: rain 0.15s linear infinite;
+}
+.rain:before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: white;
+
+  opacity: 0;
+  -webkit-animation: lightining ease-out 4s infinite;
+  -moz-animation: lightining ease-out 4s infinite;
+  animation: lightining ease-out 4s infinite;
+  animation-delay: 3s;
+}
+@keyframes rain {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 20% 100%;
+  }
+}
+@keyframes lightining {
+  from {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  93% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0.2;
+  }
+  96% {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes lightining {
+  from {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  93% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0.2;
+  }
+  96% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.typicals {
+  position: absolute;
+  color: white;
+  top: 13.2cm;
+  margin-left: 15cm;
+  font-family: "East Sea Dokdo", cursive;
+  box-sizing: border-box;
+  display: block;
+  width: 500px;
+  letter-spacing: 2px;
+  font-size: 300%;
+  line-height: 1.5cm;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  outline: none;
+  animation: chams 4s linear infinite;
+}
+@keyframes chams {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color:red;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: white;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4, 0 0 10px #03bcf4;
+  }
+}
+.heading {
+  position: absolute;
+  top: 9.6cm;
+  margin-left: 12cm;
+  font-size: 400%;
+  
+  font-family: "Pirata One", cursive;
+  letter-spacing: 8px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  outline: none;
+  animation: chamss 5s linear infinite;
+}
+@keyframes chamss {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: black;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000,
+      0 0 80px #ff0000, 0 0 160px #ff0000, 0 0 10px #ff0000;
+  }
+}
+.about {
+  position: absolute;
+  top: 11.7cm;
+  margin-left: 18.7cm;
+  color: yellow;
+  font-size: 300%;
+  text-decoration: underline dashed;
+  font-family: "East Sea Dokdo", cursive;
+}
+.sound {
+  width: 400px;
+  padding-right: 2.5cm;
+}
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 65px;
+  border-radius: 50px;
+  color: black;
+  font-family: "Raleway";
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1d1f20;
+  position: absolute;
+  border-radius: var(--borderWidth);
+  top: 0.5cm;
+  z-index: 9;
+  margin-left: 38cm;
+}
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s infinite;
+  background-size: 300% 300%;
+  filter: blur(5px);
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.icons {
+  display: inline-flex;
+  position: absolute;
+  top: 16.5cm;
+  margin-left: 13.9cm;
+}
+.text {
+  font-family: "East Sea Dokdo", cursive;
+  font-size: 250%;
+}
+.icons a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.icons a .layer {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+}
+.icons a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+.icons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.icons a .layer span.fab {
+  font-size: 30px;
+  line-height: 55px;
+  text-align: center;
+}
+.icons a:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+.icons a:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+.icons a:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.icons a:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+.icons a:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+.icons a:nth-child(1) .layer span,
+.icons a:nth-child(1) .text {
+  color: #4267b2;
+  border-color: #4267b2;
+}
+.icons a:nth-child(2) .layer span,
+.icons a:nth-child(2) .text {
+  color: #1d32f2;
+  border-color: #1d21f2;
+}
+.icons a:nth-child(3) .layer span,
+.icons a:nth-child(3) .text {
+  color: #e1306c;
+  border-color: #e1306c;
+}
+.icons a:nth-child(4) .layer span,
+.icons a:nth-child(4) .text {
+  color: #2867b2;
+  border-color: #2867b2;
+}
+.icons a:nth-child(5) .layer span,
+.icons a:nth-child(5) .text {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+.icons a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px #4267b2;
+}
+.icons a:hover:nth-child(2) .layer span {
+  box-shadow: -1px 1px 3px #1da1f2;
+}
+.icons a:hover:nth-child(3) .layer span {
+  box-shadow: -1px 1px 3px #e1306c;
+}
+.icons a:hover:nth-child(4) .layer span {
+  box-shadow: -1px 1px 3px #2867b2;
+}
+.icons a:hover:nth-child(5) .layer span {
+  box-shadow: -1px 1px 3px #ff0000;
+}
+.icons a .text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 500;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+.icons a:hover .text {
+  bottom: -35px;
+  opacity: 1;
+}
+@media(max-width:480px){
+.heading {
+  position: absolute;
+  top: 2cm;
+  margin-left: 1.6cm;
+  font-size: 140%;
+  display: block;
+  width: 250px;
+  font-family: "Pirata One", cursive;
+  letter-spacing: 8px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  outline: none;
+  animation: chamss 5s linear infinite;
+  text-align: center;
+}
+.overlap {
+  position: absolute;
+  color: white;
+  top: 1cm;
+  left: 0cm;
+  transform: rotate(-5deg);
+  width: 50%;
+  display: none;
+}
+.parent {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url(https://13thhour.com/wp-content/uploads/haunted_hous1.jpg);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.about {
+  position: absolute;
+  top: 4cm;
+ margin-left: 3.5cm;
+  color: yellow;
+  font-size: 180%;
+  text-decoration: underline dashed;
+  font-family: "East Sea Dokdo", cursive;
+}
+.typicals {
+  position: absolute;
+  color: white;
+  top: 5.2cm;
+  margin-left: 1.5cm;
+  font-family: "East Sea Dokdo", cursive;
+  box-sizing: border-box;
+  display: block;
+  width: 300px;
+  letter-spacing: 1px;
+  font-size: 160%;
+  line-height: .5cm;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  outline: none;
+  animation: chams 4s linear infinite;
+}
+.icons {
+  display: inline-flex;
+  position: absolute;
+  top: 7.5cm;
+ max-width: 100vw;
+ margin-left: 0.8cm;
+ display: block;
+ width: 150px;
+ display: flex;
+}
+.icons a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+}
